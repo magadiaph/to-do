@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <script defer src="assets/script/main.js"></script>
+    <header>
+        <!-- <h1>Let's do!</h1> -->
+        <p>Do something your future self, would be thankful for.</p>
+    </header>
+
+    <main>
+    <form action="#" method="#" class="form">
+        <div class="row1">
+            <input type="text" id="inputTask" placeholder="What to do?" class="input-task">
+            <input type="datetime-local" id="dateTime">
+        </div>
+
+        <div class="row2">
+            <select name="category" id="category">
+                <option selected disabled>Choose a category</option>
+                <option>Personal</option>
+                <option>Family</option>
+                <option>School</option>
+                <option>Work</option>
+            </select>
+            <input type="button" value="Add Task" id="addTaskBtn">
+        </div>
+    </form>
+
+    <div>
+        <section id="taskList">
+
+        </section>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,168 @@
+:root {
+    /* CSS HEX */
+    --tea-green: #ccd5aeff;
+    --beige: #e9edc9ff;
+    --cornsilk: #fefae0ff;
+    --papaya-whip: #faedcdff;
+    --buff: #d4a373ff;
+
+    /* CSS HSL */
+    --tea-green: hsla(74, 32%, 76%, 1);
+    --beige: hsla(67, 50%, 86%, 1);
+    --cornsilk: hsla(52, 94%, 94%, 1);
+    --papaya-whip: hsla(43, 82%, 89%, 1);
+    --buff: hsla(30, 53%, 64%, 1);
+
+    /* SCSS HEX */
+    --tea-green: #ccd5aeff;
+    --beige: #e9edc9ff;
+    --cornsilk: #fefae0ff;
+    --papaya-whip: #faedcdff;
+    --buff: #d4a373ff;
+
+    /* SCSS HSL */
+    --tea-green: hsla(74, 32%, 76%, 1);
+    --beige: hsla(67, 50%, 86%, 1);
+    --cornsilk: hsla(52, 94%, 94%, 1);
+    --papaya-whip: hsla(43, 82%, 89%, 1);
+    --buff: hsla(30, 53%, 64%, 1);
+
+    /* SCSS RGB */
+    --tea-green: rgba(204, 213, 174, 1);
+    --beige: rgba(233, 237, 201, 1);
+    --cornsilk: rgba(254, 250, 224, 1);
+    --papaya-whip: rgba(250, 237, 205, 1);
+    --buff: rgba(212, 163, 115, 1);
+
+    /* SCSS Gradient */
+    --gradient-top: linear-gradient(0deg, #ccd5aeff, #e9edc9ff, #fefae0ff, #faedcdff, #d4a373ff);
+    --gradient-right: linear-gradient(90deg, #ccd5aeff, #e9edc9ff, #fefae0ff, #faedcdff, #d4a373ff);
+    --gradient-bottom: linear-gradient(180deg, #ccd5aeff, #e9edc9ff, #fefae0ff, #faedcdff, #d4a373ff);
+    --gradient-left: linear-gradient(270deg, #ccd5aeff, #e9edc9ff, #fefae0ff, #faedcdff, #d4a373ff);
+    --gradient-top-right: linear-gradient(45deg, #ccd5aeff, #e9edc9ff, #fefae0ff, #faedcdff, #d4a373ff);
+    --gradient-bottom-right: linear-gradient(135deg, #ccd5aeff, #e9edc9ff, #fefae0ff, #faedcdff, #d4a373ff);
+    --gradient-top-left: linear-gradient(225deg, #ccd5aeff, #e9edc9ff, #fefae0ff, #faedcdff, #d4a373ff);
+    --gradient-bottom-left: linear-gradient(315deg, #ccd5aeff, #e9edc9ff, #fefae0ff, #faedcdff, #d4a373ff);
+    --gradient-radial: radial-gradient(#ccd5aeff, #e9edc9ff, #fefae0ff, #faedcdff, #d4a373ff);
+}
+
+* {
+   box-sizing: border-box;
+   margin: 0; 
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+body {
+    background: var(--gradient-bottom-right);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    font-family: 'Indie Flower', cursive;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+input {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+
+form {
+    width: 500px;
+    background: rgba(74, 54, 5, 0.212);
+    border-radius: 25px;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 15px 25px;
+}
+
+.row1 #inputTask {
+    width: 350px;
+} 
+
+#dateTime:hover {
+    opacity: 0.7;
+}
+
+.row2 {
+    display: flex;
+    justify-content:end;
+    margin: 15px 25px;
+}
+
+#category {
+    font-family: 'Indie Flower', cursive;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#category:hover {
+    opacity: 0.7;
+}
+
+option:hover {
+    background:var(--buff);
+}
+
+#addTaskBtn {
+    font-weight: bold;
+    font-variant: small-caps;
+    color: var(--buff);
+    padding: 4px 8px;
+    border-radius: 15px;
+    background: var(--cornsilk);
+    
+}
+
+#addTaskBtn:hover {
+    opacity: 0.7;
+}
+
+#addTaskBtn:active {
+    opacity: 0.5;
+}
+
+#taskList {
+    width: 500px;
+}
+
+.item-details {
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+ul {
+    list-style-type: none;
+
+    margin-top: 15px;
+}
+
+#taskList {
+    margin-top: 15px;
+}
