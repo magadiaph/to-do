@@ -166,3 +166,23 @@ ul {
 #taskList {
     margin-top: 15px;
 }
+
+#warning {
+    align-self: center;
+}
+
+.delete-button {
+    color: var(--buff);
+    font-size: 10px;
+    
+    font-family: 'Indie Flower', cursive;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.delete-button:hover {
+    font-size: 15px;
+}
